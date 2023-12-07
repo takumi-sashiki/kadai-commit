@@ -2,11 +2,10 @@ package baseball;
 
 public class BaseBallTeam {
 
-    public String name;
-    public int win;
-    public int lose;
-    public int draw;
-    public double rate;
+    private String name;
+    private int win;
+    private int lose;
+    private int draw;
 
     public BaseBallTeam() {
     }
@@ -19,8 +18,7 @@ public class BaseBallTeam {
     }
 
     public double getRate() {
-        rate = ((double) win / (win + lose));
-        return rate;
+        return ((double) win / (win + lose));
     }
 
     public void report() {
