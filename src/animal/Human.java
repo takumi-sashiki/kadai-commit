@@ -21,13 +21,13 @@ public class Human extends Animal implements Thinkable {
     }
 
     @Override
-    public void say(Animal animal) {
+    public void say() {
         System.out.println(super.getName() + "です。" + super.getAge() + "歳です。");
     }
 
     @Override
-    public void think(Animal animal) {
-        System.out.println("私は" + this.tastes + "について考えています。");
+    public void think() {
+        System.out.println("私は" + tastes + "について考えています。");
     }
 
 }
